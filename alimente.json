@@ -1,0 +1,730 @@
+[
+  {
+    "id": 1,
+    "nume": "Piept de pui la grătar",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 165,
+      "proteine": 31.0,
+      "grasimi": 3.6,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 2,
+    "nume": "Piept de pui crud",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 120,
+      "proteine": 22.5,
+      "grasimi": 2.6,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 3,
+    "nume": "Pulpă de pui dezosată fără piele (gătită)",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 209,
+      "proteine": 26.0,
+      "grasimi": 10.9,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 4,
+    "nume": "Piept de curcan la grătar",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 147,
+      "proteine": 30.1,
+      "grasimi": 2.1,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 5,
+    "nume": "Mușchi de vită la grătar",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 194,
+      "proteine": 28.6,
+      "grasimi": 8.2,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 6,
+    "nume": "Carne tocată de vită slabă (gătită)",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 217,
+      "proteine": 26.1,
+      "grasimi": 11.7,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 7,
+    "nume": "Mușchiuleț de porc la cuptor",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 143,
+      "proteine": 26.2,
+      "grasimi": 3.5,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 8,
+    "nume": "File de somon la cuptor / grătar",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 206,
+      "proteine": 22.1,
+      "grasimi": 12.4,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 9,
+    "nume": "File de ton proaspăt (gătit)",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 130,
+      "proteine": 29.2,
+      "grasimi": 0.6,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 10,
+    "nume": "Ton în suc propriu (conservă)",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 116,
+      "proteine": 25.5,
+      "grasimi": 0.8,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 11,
+    "nume": "File de cod / șalău la cuptor",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 105,
+      "proteine": 22.8,
+      "grasimi": 0.9,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 12,
+    "nume": "Creveți fierți / la tigaie",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 99,
+      "proteine": 24.0,
+      "grasimi": 0.3,
+      "carbohidrati": 0.2,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 13,
+    "nume": "Ou fiert tare",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 155,
+      "proteine": 12.6,
+      "grasimi": 10.6,
+      "carbohidrati": 1.1,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 14,
+    "nume": "Ou prăjit (ochi)",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 196,
+      "proteine": 13.6,
+      "grasimi": 14.8,
+      "carbohidrati": 0.8,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 15,
+    "nume": "Omletă simplă",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 154,
+      "proteine": 10.6,
+      "grasimi": 11.7,
+      "carbohidrati": 0.6,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 16,
+    "nume": "Albuș de ou (gătit)",
+    "categorie": "Carne, pește și ouă",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 52,
+      "proteine": 10.9,
+      "grasimi": 0.2,
+      "carbohidrati": 0.7,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 17,
+    "nume": "Iaurt grecesc (2% grăsime)",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Olympus Iaurt grecesc 2%",
+    "valori_100g": {
+      "kcal": 65,
+      "proteine": 8.0,
+      "grasimi": 2.0,
+      "carbohidrati": 3.8,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 18,
+    "nume": "Iaurt grecesc (10% grăsime)",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Olympus Iaurt grecesc 10%",
+    "valori_100g": {
+      "kcal": 126,
+      "proteine": 5.5,
+      "grasimi": 10.0,
+      "carbohidrati": 3.5,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 19,
+    "nume": "Skyr simplu",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Arla Skyr natural",
+    "valori_100g": {
+      "kcal": 63,
+      "proteine": 11.0,
+      "grasimi": 0.0,
+      "carbohidrati": 4.0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 20,
+    "nume": "Brânză de vaci slabă",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Hochland Brânză de vaci ușoară",
+    "valori_100g": {
+      "kcal": 89,
+      "proteine": 18.0,
+      "grasimi": 0.5,
+      "carbohidrati": 3.1,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 21,
+    "nume": "Brânză telemea de vacă",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Hochland Telemea de vacă",
+    "valori_100g": {
+      "kcal": 279,
+      "proteine": 15.0,
+      "grasimi": 24.0,
+      "carbohidrati": 0.7,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 22,
+    "nume": "Mozzarella light",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Galbani Mozzarella Light",
+    "valori_100g": {
+      "kcal": 171,
+      "proteine": 17.0,
+      "grasimi": 11.0,
+      "carbohidrati": 1.0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 23,
+    "nume": "Cașcaval clasic",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Hochland Cașcaval clasic",
+    "valori_100g": {
+      "kcal": 328,
+      "proteine": 23.0,
+      "grasimi": 26.0,
+      "carbohidrati": 0.5,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 24,
+    "nume": "Lapte semidegresat (1.5% grăsime)",
+    "categorie": "Lactate",
+    "sursa": "Etichetă tipică lapte 1,5%",
+    "valori_100g": {
+      "kcal": 46,
+      "proteine": 3.3,
+      "grasimi": 1.5,
+      "carbohidrati": 4.8,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 25,
+    "nume": "Pudră proteică din zer (whey)",
+    "categorie": "Lactate",
+    "sursa": "Etichetă Optimum Nutrition Gold Standard 100% Whey",
+    "valori_100g": {
+      "kcal": 375,
+      "proteine": 75.0,
+      "grasimi": 6.3,
+      "carbohidrati": 9.4,
+      "fibre": 1.6
+    }
+  },
+  {
+    "id": 26,
+    "nume": "Orez alb fiert",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 130,
+      "proteine": 2.7,
+      "grasimi": 0.3,
+      "carbohidrati": 27.8,
+      "fibre": 0.4
+    }
+  },
+  {
+    "id": 27,
+    "nume": "Orez basmati fiert",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central (orez alb cu bob lung)",
+    "valori_100g": {
+      "kcal": 130,
+      "proteine": 2.7,
+      "grasimi": 0.3,
+      "carbohidrati": 27.8,
+      "fibre": 0.4
+    }
+  },
+  {
+    "id": 28,
+    "nume": "Orez brun fiert",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 123,
+      "proteine": 2.7,
+      "grasimi": 1.0,
+      "carbohidrati": 24.0,
+      "fibre": 1.6
+    }
+  },
+  {
+    "id": 29,
+    "nume": "Cartofi albi copți / fierți",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 93,
+      "proteine": 2.5,
+      "grasimi": 0.1,
+      "carbohidrati": 19.0,
+      "fibre": 2.2
+    }
+  },
+  {
+    "id": 30,
+    "nume": "Cartofi dulci copți",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 90,
+      "proteine": 2.0,
+      "grasimi": 0.2,
+      "carbohidrati": 17.4,
+      "fibre": 3.3
+    }
+  },
+  {
+    "id": 31,
+    "nume": "Paste integrale fierte",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 124,
+      "proteine": 5.3,
+      "grasimi": 0.5,
+      "carbohidrati": 22.0,
+      "fibre": 4.5
+    }
+  },
+  {
+    "id": 32,
+    "nume": "Paste albe fierte",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 158,
+      "proteine": 5.8,
+      "grasimi": 0.9,
+      "carbohidrati": 29.1,
+      "fibre": 1.8
+    }
+  },
+  {
+    "id": 33,
+    "nume": "Fulgi de ovăz (cruzi)",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 379,
+      "proteine": 13.2,
+      "grasimi": 6.5,
+      "carbohidrati": 57.6,
+      "fibre": 10.1
+    }
+  },
+  {
+    "id": 34,
+    "nume": "Cremă de orez (uscată)",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 370,
+      "proteine": 6.3,
+      "grasimi": 0.5,
+      "carbohidrati": 81.7,
+      "fibre": 0.7
+    }
+  },
+  {
+    "id": 35,
+    "nume": "Pâine integrală / neagră",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "Etichetă Vel Pitar Pâine Grâu Întreg (InfoCons)",
+    "valori_100g": {
+      "kcal": 223,
+      "proteine": 10.8,
+      "grasimi": 1.7,
+      "carbohidrati": 36.8,
+      "fibre": 8.7
+    }
+  },
+  {
+    "id": 36,
+    "nume": "Pâine albă",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 266,
+      "proteine": 7.6,
+      "grasimi": 3.3,
+      "carbohidrati": 46.7,
+      "fibre": 2.7
+    }
+  },
+  {
+    "id": 37,
+    "nume": "Rondele de orez expandat",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 387,
+      "proteine": 8.2,
+      "grasimi": 2.8,
+      "carbohidrati": 77.3,
+      "fibre": 4.2
+    }
+  },
+  {
+    "id": 38,
+    "nume": "Quinoa fiartă",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 120,
+      "proteine": 4.4,
+      "grasimi": 1.9,
+      "carbohidrati": 18.5,
+      "fibre": 2.8
+    }
+  },
+  {
+    "id": 39,
+    "nume": "Hrișcă fiartă",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 92,
+      "proteine": 3.4,
+      "grasimi": 0.6,
+      "carbohidrati": 17.2,
+      "fibre": 2.7
+    }
+  },
+  {
+    "id": 40,
+    "nume": "Năut fiert",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 164,
+      "proteine": 8.9,
+      "grasimi": 2.6,
+      "carbohidrati": 19.8,
+      "fibre": 7.6
+    }
+  },
+  {
+    "id": 41,
+    "nume": "Linte fiartă",
+    "categorie": "Carbohidrați și cereale",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 116,
+      "proteine": 9.0,
+      "grasimi": 0.4,
+      "carbohidrati": 12.2,
+      "fibre": 7.9
+    }
+  },
+  {
+    "id": 42,
+    "nume": "Avocado",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 160,
+      "proteine": 2.0,
+      "grasimi": 14.7,
+      "carbohidrati": 1.8,
+      "fibre": 6.7
+    }
+  },
+  {
+    "id": 43,
+    "nume": "Unt de arahide (100% arahide)",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 588,
+      "proteine": 25.1,
+      "grasimi": 50.4,
+      "carbohidrati": 13.6,
+      "fibre": 6.0
+    }
+  },
+  {
+    "id": 44,
+    "nume": "Migdale crude",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 579,
+      "proteine": 21.2,
+      "grasimi": 49.9,
+      "carbohidrati": 9.1,
+      "fibre": 12.5
+    }
+  },
+  {
+    "id": 45,
+    "nume": "Nuci (miez)",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 654,
+      "proteine": 15.2,
+      "grasimi": 65.2,
+      "carbohidrati": 7.0,
+      "fibre": 6.7
+    }
+  },
+  {
+    "id": 46,
+    "nume": "Ulei de măsline extravirgin",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 884,
+      "proteine": 0.0,
+      "grasimi": 100.0,
+      "carbohidrati": 0,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 47,
+    "nume": "Unt (82% grăsime)",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 717,
+      "proteine": 0.9,
+      "grasimi": 81.1,
+      "carbohidrati": 0.1,
+      "fibre": 0
+    }
+  },
+  {
+    "id": 48,
+    "nume": "Semințe de chia",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 486,
+      "proteine": 16.5,
+      "grasimi": 30.7,
+      "carbohidrati": 7.7,
+      "fibre": 34.4
+    }
+  },
+  {
+    "id": 49,
+    "nume": "Semințe de in",
+    "categorie": "Grăsimi, nuci și semințe",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 534,
+      "proteine": 18.3,
+      "grasimi": 42.2,
+      "carbohidrati": 1.6,
+      "fibre": 27.3
+    }
+  },
+  {
+    "id": 50,
+    "nume": "Banană",
+    "categorie": "Fructe și legume",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 89,
+      "proteine": 1.1,
+      "grasimi": 0.3,
+      "carbohidrati": 20.2,
+      "fibre": 2.6
+    }
+  },
+  {
+    "id": 51,
+    "nume": "Măr",
+    "categorie": "Fructe și legume",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 52,
+      "proteine": 0.3,
+      "grasimi": 0.2,
+      "carbohidrati": 11.4,
+      "fibre": 2.4
+    }
+  },
+  {
+    "id": 52,
+    "nume": "Afine",
+    "categorie": "Fructe și legume",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 57,
+      "proteine": 0.7,
+      "grasimi": 0.3,
+      "carbohidrati": 12.1,
+      "fibre": 2.4
+    }
+  },
+  {
+    "id": 53,
+    "nume": "Broccoli fiert / la abur",
+    "categorie": "Fructe și legume",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 35,
+      "proteine": 2.4,
+      "grasimi": 0.4,
+      "carbohidrati": 3.9,
+      "fibre": 3.3
+    }
+  },
+  {
+    "id": 54,
+    "nume": "Spanac proaspăt",
+    "categorie": "Fructe și legume",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 23,
+      "proteine": 2.9,
+      "grasimi": 0.4,
+      "carbohidrati": 1.4,
+      "fibre": 2.2
+    }
+  },
+  {
+    "id": 55,
+    "nume": "Roșii",
+    "categorie": "Fructe și legume",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 18,
+      "proteine": 0.9,
+      "grasimi": 0.2,
+      "carbohidrati": 2.7,
+      "fibre": 1.2
+    }
+  },
+  {
+    "id": 56,
+    "nume": "Castraveți",
+    "categorie": "Fructe și legume",
+    "sursa": "USDA FoodData Central",
+    "valori_100g": {
+      "kcal": 15,
+      "proteine": 0.7,
+      "grasimi": 0.1,
+      "carbohidrati": 3.1,
+      "fibre": 0.5
+    }
+  }
+]
