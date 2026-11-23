@@ -101,6 +101,19 @@ def valori_reteta(ingrediente):
     return {"grame": total_grame, "total": total, "la_100g": la_100g}
 
 
+def acum_text():
+    """Data si ora curenta, in formatul folosit de aplicatie."""
+    return datetime.now().strftime(FORMAT_DATA_ORA)
+
+
+def citeste_zi(text):
+    """Verifica o zi 'AAAA-LL-ZZ' si o intoarce ca text."""
+    try:
+        return datetime.strptime(text.strip(), "%Y-%m-%d").strftime("%Y-%m-%d")
+    except ValueError:
+        raise ValueError("Ziua trebuie sa fie de forma AAAA-LL-ZZ.") from None
+
+
 def citeste_data_ora(text):
     """Transforma un text 'AAAA-LL-ZZ HH:MM' intr-un obiect datetime."""
     try:

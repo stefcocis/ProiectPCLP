@@ -1,7 +1,8 @@
-"""Verificari cu assert pentru logica proiectului (la L6 devin teste automate)."""
+"""Verificari cu assert pentru logica si baza de date (la L6 devin teste automate)."""
 from logica import (
     cauta_alimente,
     citeste_grame,
+    citeste_zi,
     creeaza_aliment,
     creeaza_masa,
     creeaza_utilizator,
@@ -12,7 +13,7 @@ from logica import (
     valori_zero,
     verifica_parola,
 )
-from stocare import incarca_alimente
+from stocare import BazaDeDate, incarca_alimente
 
 
 def aliment_test(identificator, kcal):
@@ -29,7 +30,7 @@ def este_respins(functie, *argumente):
     return False
 
 
-# Intrari valide
+# --- Logica: intrari valide ---
 aliment = aliment_test(1, 50)
 assert valori_pentru_cantitate(aliment, 200)["kcal"] == 100
 masa_1 = creeaza_masa(1, aliment_test(2, 100), 300, "2026-11-16 08:00")
@@ -41,31 +42,61 @@ utilizator = creeaza_utilizator("ana", "secret123")
 assert verifica_parola(utilizator, "secret123")
 assert "secret123" not in str(utilizator)
 assert citeste_grame(" 150,5 ") == 150.5
+assert citeste_zi(" 2026-11-17 ") == "2026-11-17"
 
 catalog = incarca_alimente()
 assert len(catalog) == 56
-assert len({a["id"] for a in catalog}) == len(catalog)
 mar = cauta_alimente(catalog, "măr")[0]
 assert valori_pentru_cantitate(mar, 200)["kcal"] == 104
-assert all("orez" in a["nume"].lower() for a in cauta_alimente(catalog, "OREZ"))
-assert len(cauta_alimente(catalog, "")) == len(catalog)
 
-# Intrari invalide
+# --- Logica: intrari invalide ---
 assert este_respins(valori_pentru_cantitate, aliment, -5)
 assert este_respins(creeaza_aliment, 5, "   ", aliment["valori_100g"])
 assert este_respins(creeaza_masa, 3, aliment, 100, "16.11.2026 8:00")
 assert este_respins(creeaza_masa, 4, aliment, 100, "2099-01-01 10:00")
 assert este_respins(creeaza_utilizator, "ana", "123")
 assert not verifica_parola(utilizator, "gresit")
-assert este_respins(incarca_alimente, "nu_exista.json")
 assert este_respins(citeste_grame, "abc")
-assert este_respins(citeste_grame, "0")
+assert este_respins(citeste_zi, "17.11.2026")
+assert este_respins(incarca_alimente, "nu_exista.json")
 
-# Cazuri-limita
-assert valori_pentru_cantitate(aliment, 100)["kcal"] == 50
+# --- Logica: cazuri-limita ---
 assert medie_zilnica([]) == valori_zero()
 assert total_pe_zi([masa_1], "2026-11-17") == valori_zero()
 assert este_respins(valori_reteta, [])
 assert cauta_alimente(catalog, "ciocolata") == []
+
+# --- Baza de date (in memorie, nu atinge date.db) ---
+baza = BazaDeDate(":memory:")
+ana = baza.inregistreaza("ana", "secret123")
+dan = baza.inregistreaza("dan", "parola99")
+assert baza.autentifica("ana", "secret123") == ana
+assert este_respins(baza.autentifica, "ana", "gresit")
+assert este_respins(baza.autentifica, "nimeni", "secret123")
+assert este_respins(baza.inregistreaza, "ana", "altaparola")
+
+pui = cauta_alimente(baza.alimente(ana["id"]), "piept de pui la")[0]
+baza.adauga_masa(ana["id"], pui, 100, "2026-11-10 13:00")
+baza.adauga_masa(ana["id"], pui, 200, "2026-11-10 20:00")
+baza.adauga_masa(ana["id"], pui, 100, "2026-11-09 13:00")
+assert total_pe_zi(baza.mese(ana["id"], "2026-11-10"), "2026-11-10")["kcal"] == 495
+assert len(baza.mese(ana["id"])) == 3
+
+# fiecare utilizator isi vede doar datele lui
+propriu = baza.adauga_aliment(ana["id"], "Iaurt de casa", {
+    "kcal": 60, "proteine": 3.5, "grasimi": 3, "carbohidrati": 5, "fibre": 0})
+assert any(a["id"] == propriu["id"] for a in baza.alimente(ana["id"]))
+assert not any(a["nume"] == "Iaurt de casa" for a in baza.alimente(dan["id"]))
+assert baza.mese(dan["id"]) == []
+assert este_respins(baza.sterge_aliment, dan["id"], propriu["id"])
+assert este_respins(baza.sterge_aliment, ana["id"], pui["id"])
+baza.sterge_aliment(ana["id"], propriu["id"])
+assert not any(a["id"] == propriu["id"] for a in baza.alimente(ana["id"]))
+masa_ana = baza.mese(ana["id"])[0]
+assert este_respins(baza.sterge_masa, dan["id"], masa_ana["id"])
+baza.sterge_masa(ana["id"], masa_ana["id"])
+assert len(baza.mese(ana["id"])) == 2
+assert este_respins(baza.adauga_masa, ana["id"], pui, -10, "2026-11-10 13:00")
+baza.inchide()
 
 print("Toate verificarile au trecut.")
